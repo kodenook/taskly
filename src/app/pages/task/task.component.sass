@@ -1,0 +1,43 @@
+mat-card
+  margin: 2rem auto
+
+mat-form-field
+  width: 100%
+
+mat-card-actions
+  display: flex
+  justify-content: flex-end
+
+
+ul
+  list-style-type: none
+  padding: 1rem
+
+li
+  margin-bottom: 1rem
+  background-color: var(--mat-sys-secondary-container)
+  padding: .5rem
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+li > :nth-child(2)
+  flex-grow: 1
+  word-break: break-word
+  margin: 0 .5rem
+
+.mat-mdc-checkbox-checked + div
+  text-decoration: line-through
+  opacity: 0.5
+
+@media (max-width: 600px)
+  mat-card
+    width: 90%
+
+@media (min-width: 601px) and (max-width: 1280px)
+  mat-card
+    width: 80%
+
+@media (min-width: 1281px)
+  mat-card
+    width: 50%

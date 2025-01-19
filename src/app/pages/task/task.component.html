@@ -1,0 +1,39 @@
+<mat-card>
+  <form (ngSubmit)="addTask(taskForm)" #taskForm="ngForm">
+    <mat-card-content>
+      <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput [(ngModel)]="task.title" name="title" required #title="ngModel"/>
+      </mat-form-field>
+      <div class="error-message">
+        @if (title.hasError('required') && (title.dirty || title.touched)) {
+          <div>Title is required.</div>
+        } @else {
+          <div>&nbsp;</div>
+        }
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button [disabled]="!taskForm.form.valid" mat-flat-button extended type="submit">
+        <mat-icon>add</mat-icon>
+        add
+      </button>
+    </mat-card-actions>
+  </form>
+</mat-card>
+
+<mat-card>
+  <ul>
+    @for (task of tasks; track $index) {
+      <li>
+        <mat-checkbox />
+        <div>
+          {{ task.title }}
+        </div>
+        <button class="delete-button" mat-mini-fab aria-label="delete task button" type="button" (click)="deleteTask($index)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </li>
+    }
+  </ul>
+</mat-card>

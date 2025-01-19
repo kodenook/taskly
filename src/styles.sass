@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+button[mat-button],
+button[mat-raised-button],
+button[mat-flat-button],
+button[mat-stroked-button],
+button[mat-icon-button],
+button[mat-fab],
+button[mat-mini-fab]
+  text-transform: uppercase
+
+.error-message
+  color: var(--mat-sys-error)
+
+button[mat-button].delete-button,
+button[mat-raised-button].delete-button,
+button[mat-flat-button].delete-button,
+button[mat-stroked-button].delete-button,
+button[mat-icon-button].delete-button,
+button[mat-fab].delete-button,
+button[mat-mini-fab].delete-button
+  color: var(--mat-sys-error)
+  background-color: var(--mat-sys-error-container)
