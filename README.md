@@ -1,59 +1,60 @@
+
 # Taskly
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.5.
+organize and manage your tasks quickly and easily
 
-## Development server
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
+[![angular](https://img.shields.io/badge/Angular-v19-red.svg)](https://v19.angular.dev)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+[![angular material](https://img.shields.io/badge/Angular_material-v19-red.svg)](https://v19.material.angular.io)
 
-## Code scaffolding
+[![typescript](https://img.shields.io/badge/Typescript-blue.svg)](https://www.typescriptlang.org)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+[![sass](https://img.shields.io/badge/Sass-%23C69.svg)](https://sass-lang.com)
 
-```bash
-ng generate component component-name
-```
+## Features
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Add task
+- Check task as completed
+- Delete task
 
-```bash
-ng generate --help
-```
 
-## Building
+## Run Locally
 
-To build the project run:
+Clone the project
 
 ```bash
-ng build
+  git clone -b main https://github.com/kodenook/taskly.git
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Go to the project directory
 
 ```bash
-ng test
+  cd taskly
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Install dependencies
 
 ```bash
-ng e2e
+  npm install
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Start the server
 
-## Additional Resources
+```bash
+  ng serve
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Contributing
+
+Contributions are **not allowed** in this project.
+
+Please do not submit pull requests or attempt to modify the code. This project is not open to external contributions.
+
+Thank you for your understanding.
+
+
+## Authors
+
+- [@kodenook](https://www.github.com/kodenook)
