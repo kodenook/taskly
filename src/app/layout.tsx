@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 import './globals.css'
+import Header from '@/components/layout/header'
 
 export const metadata: Metadata = {
     description: 'Organize and manage your tasks quickly and easily',
@@ -15,9 +16,12 @@ const RootLayout = ({
     return (
         <html lang="en">
             <body
-                className="antialiased"
+                className="antialiased h-dvh flex flex-col"
             >
-                {children}
+                <Header />
+                <main className="flex-1">
+                    {children}
+                </main>
             </body>
         </html>
     )
