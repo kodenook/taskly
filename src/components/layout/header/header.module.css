@@ -1,0 +1,11 @@
+.header {
+    background-color: oklch(55.4% 0.046 257.417);
+    color: white;
+    padding: 1rem;
+}
+
+.header h1 {
+    text-transform: capitalize;
+    font-family: serif;
+    font-size: 3rem;
+}
