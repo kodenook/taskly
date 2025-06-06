@@ -1,8 +1,11 @@
 import type { Metadata } from 'next'
 
 import './globals.css'
+
 import { AntdRegistry } from '@ant-design/nextjs-registry'
 import '@ant-design/v5-patch-for-react-19'
+
+import Header from '@/components/layout/header/header'
 
 export const metadata: Metadata = {
     description: 'Organize and manage your tasks quickly and easily.',
@@ -18,7 +21,8 @@ const RootLayout = ({
         <html lang="en">
             <AntdRegistry>
                 <body>
-                    {children}
+                    <Header />
+                    <main>{children}</main>
                 </body>
             </AntdRegistry>
         </html>
