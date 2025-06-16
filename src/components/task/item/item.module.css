@@ -1,0 +1,17 @@
+/* Task item container */
+.item {
+    /* Layout */
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: .5rem;
+    padding: 0 .5rem;
+
+    /* Dimensions */
+    height: 3rem;
+
+    /* Visual */
+    border-radius: 10px;
+    border: solid 1px oklch(92.8% 0.006 264.531);
+}
+

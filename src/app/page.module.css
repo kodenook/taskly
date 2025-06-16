@@ -1,0 +1,33 @@
+/* Task container styles */
+.task {
+    /* Layout */
+    display: grid;
+    grid-template-rows: auto minmax(250px, 1fr);
+    row-gap: .5rem;
+    margin: 0 auto;
+
+    /* Dimensions */
+    height: 100%;
+    width: clamp(350px, 40dvw, 600px);
+}
+
+/* Scrollable content area */
+.task > :last-child {
+    /* Behavior */
+    overflow-y: auto;
+}
+
+/* Task list styles */
+.task ul {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+/* Form button container */
+.task form > :last-child {
+    /* Layout */
+    display: flex;
+    justify-content: flex-end;
+}

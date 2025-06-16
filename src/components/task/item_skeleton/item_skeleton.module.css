@@ -1,0 +1,58 @@
+/* Skeleton item container */
+.item {
+    /* Layout */
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: .5rem;
+    padding: 0 .7rem;
+
+    /* Dimensions */
+    height: 3rem;
+
+    /* Visual */
+    border-radius: 10px;
+    border: solid 1px oklch(92.8% 0.006 264.531);
+}
+
+/* Skeleton circular elements (status and remove icons) */
+.skeletonIcon,
+.skeletonRemove {
+    /* Dimensions */
+    width: 25px;
+    height: 25px;
+
+    /* Visual */
+    background-color: #e0e0e0;
+    border-radius: 50%;
+
+    /* Animation */
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Skeleton text area */
+.skeletonText {
+    /* Layout */
+    flex: 1;
+    height: 16px;
+
+    /* Visual */
+    background-color: #e0e0e0;
+    border-radius: 4px;
+
+    /* Animation */
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Pulse animation for loading effect */
+@keyframes pulse {
+    0% {
+        background-color: #e0e0e0;
+    }
+    50% {
+        background-color: #f0f0f0;
+    }
+    100% {
+        background-color: #e0e0e0;
+    }
+}

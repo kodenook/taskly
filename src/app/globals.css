@@ -29,6 +29,7 @@ body {
 main {
     /* Layout */
     padding: 1rem;
+    height: calc(100dvh - 100px);
 
     /* Visual */
     background-color: oklch(96.7% 0.003 264.542);
