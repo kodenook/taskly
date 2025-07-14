@@ -9,6 +9,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+main {
+    padding: 1rem;
+    height: calc(100dvh - 100px);
+
+    background: oklch(96.7% 0.003 264.542);
 }
 
 * {
